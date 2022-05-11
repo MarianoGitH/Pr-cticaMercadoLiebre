@@ -7,7 +7,7 @@ const path = require('path');
 const views = path.join(__dirname, 'views/');
 
 // Public
-const public = path.join(__dirname, 'public');
+const public = path.join(__dirname, 'public/');
 
 // HTTP routes
 const httpRaiz = '/';

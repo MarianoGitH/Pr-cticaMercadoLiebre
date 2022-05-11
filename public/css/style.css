@@ -4,6 +4,24 @@ header {
   background-color: yellow;
 }
 
+body {
+  font-family: "Roboto";
+  height: 100%;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+nav {
+  display: none;
+}
+
+article {
+  padding: 15px;
+}
+
 h2 {
   font-size: 24px;
 }
@@ -25,16 +43,24 @@ i {
   margin-bottom: 10px;
 }
 
-body {
-  font-family: "Roboto";
-}
-
 .background-blue {
   background-color: #03264c;
 }
 
 .color-white {
   color: aliceblue;
+}
+
+.img {
+  border-top: solid 1px #ebebeb;
+}
+
+div.img img {
+  width: 100%;
+}
+
+.description {
+  display: none;
 }
 
 .burger-menu {
@@ -49,4 +75,24 @@ body {
 
 .padding-10 {
   padding: 10px;
+}
+
+/*TABLET*/
+@media (min-width: 361px) {
+  nav {
+    display: block;
+  }
+  article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .description {
+    display: block;
+  }
+  .burger-menu {
+    display: none;
+  }
+}
+
+/*DESKTOP*/
+@media (min-width: 769px) {
 }
