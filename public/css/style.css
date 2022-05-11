@@ -20,18 +20,33 @@ p {
   font-size: 18px;
 }
 
+i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
 body {
   font-family: "Roboto";
 }
 
-.background-blue{
-    background-color: #03264c;
+.background-blue {
+  background-color: #03264c;
 }
 
-.color-white{
-    color:aliceblue
+.color-white {
+  color: aliceblue;
 }
 
-.burger-menu{
-    text-align: center;
+.burger-menu {
+  text-align: center;
+  padding: 10px;
+  border-radius: 15%;
+}
+
+.border-radius-15 {
+  border-radius: 15%;
+}
+
+.padding-10 {
+  padding: 10px;
 }
