@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 header {
   background-color: yellow;
 }
@@ -17,9 +22,15 @@ main {
 nav {
   display: none;
 }
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 article {
   padding: 15px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -77,10 +88,41 @@ div.img img {
   padding: 10px;
 }
 
+.container-flex-box {
+  display: flex;
+}
+
+.flex-grow-30 {
+  flex-grow: 0.3;
+}
+
+.flex-grow-70 {
+  flex-grow: 0.7;
+}
+
+.flex-grow-1 {
+  flex-grow: 1%;
+}
+
+.flex-grow-2 {
+  display: none;
+}
+
+.flex-grow-3 {
+  display: none;
+}
+
+.flex-grow-4 {
+  display: none;
+}
+
 /*TABLET*/
 @media (min-width: 361px) {
   nav {
     display: block;
+  }
+  section {
+    flex-wrap: nowrap;
   }
   article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -90,6 +132,12 @@ div.img img {
   }
   .burger-menu {
     display: none;
+  }
+  .flex-grow-1 {
+    margin-right: 15px;
+  }
+  .flex-grow-2 {
+    display: block;
   }
 }
 
