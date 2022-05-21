@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+  </head>
+  <body>
+    <form action="login" method="post" name="register" id="register">
+      <label for="name"
+        >Nombre y apellido
+        <input type="text" name="name" id="name" placeholder="exammple name" />
+      </label>
+
+      <label for="userName">Nombre y apellido
+        <input type="text" name="userName" id="userName" placeholder="Nombre de usuario"/>
+      </label>
+
+      <label for="date"
+      >Fecha de nacimiento
+      <input type="date" name="date" id="name" />
+    </label>
+
+    <label for="adress">Domicilio
+        <input type="text" name="adress" id="adress" placeholder="Calle Nro. - Piso - Dpto."/>
+      </label>
+
+      <label for="perfil">
+          <input type="radio" name="perfil" id="perfil" value="comprador"> Comprador
+          <input type="radio" name="perfil" id="perfil" value="vendedor"> Vendedor
+      </label>
+
+      <label for="category">Categorias
+          <input type="checkbox" name="category" id="category" value="electro">Electro
+          <input type="checkbox" name="category" id="category" value="moda">Moda
+          <input type="checkbox" name="category" id="category" value="hogar">Hogar
+          <input type="checkbox" name="category" id="category" value="jugeteria">Jugutería
+          <input type="checkbox" name="category" id="category" value="vida">Vida sana
+      </label>
+
+      <label for="">Foto de perfil
+          <input type="file" name="photo" id="photo" accept="*/image">
+      </label>
+
+      <label for="pass"> Contraseña
+          <input type="password" name="pass" id="pass" placeholder="Contraseña">
+      </label>
+
+      <label for="password"> Confirme contraseña
+        <input type="passwordConf" name="passConf" id="passConf" placeholder="Contraseña">
+    </label>
+
+      <input type="submit" value="submit" />
+
+      <input type="reset" form="register" value="reset">
+
+    </form>
+
+ 
+
+  </body>
+</html>
