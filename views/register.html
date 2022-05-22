@@ -7,14 +7,14 @@
     <title>Registrarse</title>
   </head>
   <body>
-    <form action="login" method="post" name="register" id="register">
+    <form action="login" method="get" name="register" id="register">
       <label for="name"
         >Nombre y apellido
-        <input type="text" name="name" id="name" placeholder="exammple name" />
+        <input type="text" name="name" id="name" placeholder="exammple name" minlength="5" maxlength="15" required/>
       </label>
 
-      <label for="userName">Nombre y apellido
-        <input type="text" name="userName" id="userName" placeholder="Nombre de usuario"/>
+      <label for="userName">Nombre de usuario
+        <input type="email" name="userName" id="userName" placeholder="Dirección de mail" required  />
       </label>
 
       <label for="date"

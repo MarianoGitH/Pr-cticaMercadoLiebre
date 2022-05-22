@@ -5,16 +5,94 @@
   padding: 0px;
   box-sizing: border-box;
 }
-header {
-  background-color: yellow;
+
+.container-header {
+  background-color: #EAC926;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 .container-search-bar{
+  width: 80%;
   display: flex;
+  align-items: center;
 }
+
+.container-logo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo{
+  margin-top: 10px;
+  width: 50%;
+}
+
+.burger-menu button {
+  background-color: #1259c3;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+
+
+
 
 .container-search-bar div{
   width: 50%;
+}
+
+.search-bar {
+  flex-grow: 0.5;
+  margin-top: 10px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+
+.search-bar input[type="text"]{
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  color: inherit;
+  height: 2rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  border: none;
+  border-bottom-left-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+}
+
+.search-bar button{
+  width: 10%;
+  background-color: #fff;
+  height: 2rem;
+  color: #666;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-bottom-right-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+/* .nav-bar {
+  display: none;
+} */
+
+.flex-grow-70 {
+  flex-grow: 0.7;
+  color: green;
 }
 
 body {
@@ -80,6 +158,7 @@ div.img img {
 
 .description {
   display: none;
+  transition: transform .5s;
 }
 
 .burger-menu {
@@ -104,15 +183,6 @@ div.img img {
   flex-grow: 0.3;
 }
 
-.flex-grow-50 {
-  flex-grow: 0.5;
-}
-
-.flex-grow-70 {
-  flex-grow: 0.7;
-  color: green;
-}
-
 .flex-grow-1 {
   flex-grow: 1%;
 }
@@ -134,12 +204,34 @@ div.img img {
   justify-content: end;
 }
 
+/* ANIMACIONES */
+
+article:hover .description{
+  display: block;
+}
+
+i.rotate{
+  transition: transform .5s;
+}
+article:hover i.rotate{
+  transform: rotate(360deg);
+}
+
 .container-truck i{
   color: green;
   border-radius: 100%;
   border: solid;
   padding: 10px;
   border-width: thin;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div i{
+  color: green;
 }
 
 /*TABLET*/
