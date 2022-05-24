@@ -80,8 +80,7 @@
 
 .main-container input[type="text"] {
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 5px;
     padding: 15px;
     color: inherit;
     height: 2rem;
@@ -94,8 +93,33 @@
 
 .main-container input[type="password"] {
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 5px;
+    padding: 15px;
+    color: inherit;
+    height: 2rem;
+    width: 100%;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.main-container input[type="email"] {
+    display: block;
+    margin: 5px;
+    padding: 15px;
+    color: inherit;
+    height: 2rem;
+    width: 100%;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.main-container input[type="date"] {
+    display: block;
+    margin: 5px;
     padding: 15px;
     color: inherit;
     height: 2rem;
@@ -107,11 +131,9 @@
 }
 
 
-.main-container button {
+.main-container button{
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 3px;
+    margin: 5px;
     height: 2rem;
     width: 100%;
     font-family: inherit;
@@ -120,14 +142,15 @@
     border-radius: 0.3rem;
     background-color: #1259c3;
     color: #fff;
+    text-align: center;
 }
 
-.main-container input[type="radio"] {
+.main-container input[type="radio"]{
     margin-left: 10px;
     margin-right: 5px;
 }
 
-.main-container input[type="checkbox"] {
+.main-container input[type="checkbox"]{
     margin-left: 10px;
     margin-right: 5px;
 }
@@ -135,7 +158,7 @@
 .file-upload {
     display: block;
     margin: 5px;
-    padding: 3px;
+    padding: 15px;
     color: inherit;
     background-color: #fff;
     text-align: left;
@@ -145,12 +168,12 @@
     font-size: 0.9rem;
     border: none;
     border-radius: 0.3rem;
-}
-
-.file-upload input {
+  }
+  
+  .file-upload input {
     overflow: hidden;
     width: 0;
-}
+  }
 
 
 /* GENERAL SETTING */
@@ -212,7 +235,7 @@ h2 {
     color: #39b54a;
 }
 
-#id-label-titles {
+#id-label-titles{
     margin-bottom: 2px;
     font-weight: 600;
     margin-left: 5px;
@@ -220,7 +243,7 @@ h2 {
     margin-right: 5px;
 }
 
-#id-label-description {
+#id-label-description{
     font-size: 0.9rem;
     font-weight: 300;
     margin: 5px;
